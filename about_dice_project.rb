@@ -4,7 +4,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class DiceSet
   def roll(dice)
-    @values = Array.new(dice).map {|value| rand(1..6)}
+    @values = Array.new(dice).map {rand(1..6)}
   end
 
   def values
